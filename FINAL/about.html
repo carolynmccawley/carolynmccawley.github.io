@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="css/about.css">
+
+	
+	<title>About</title>
+
+</head>
+<body>
+	<nav class="navbar navbar-transparet navbar-expand-lg">
+    <div class="container">
+    <!-- brand logo or name always get the brand class -->
+    <a class="navbar-brand" href="home.html">Livre Le Lit</a>
+    <!-- hidden button for the hamburger on mobile devices -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#myMenu"
+      aria-controls="navBarNavDropdown"
+      aria-expanded="false"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- flexbox content justify end -->
+    <div class="collapse navbar-collapse justify-content-end" id="myMenu">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="book.html" class="nav-link">Book of the Day</a>
+        </li>
+        <li class="nav-item">
+          <a href="explore.html" class="nav-link">Explore</a>
+        </li>
+		<li class="nav-item">
+          <a href="setting.html" class="nav-link">Setting</a>
+        </li>
+        <li class="nav-item">
+        	<a href="quiz.html" class="nav-link">Quiz</a>
+        </li>
+        <li class="nav-item">
+        	<a href="about.html" class="nav-link">About</a>
+        </li>
+        
+      </ul>
+    </div>
+    </div>
+  </nav>
+
+	
+<div class="container"> 
+ <div class="row">
+ 	<div class="col-lg-6">
+ 		<div class="bookowl">
+ 			<img src="photo/bookowl.jpg" class="img" height="35%" width="20%">
+ 		</div>
+ 		<div class="booktree">
+ 			<img src="photo/booktree.png" alt="Book Tree" class="bookowl" height="100%" width="100%">
+ 		</div>
+ 		
+ 	</div>
+ 	<div class="col-lg-6">
+ 		<p>
+ 			Welcome to Lire le Livre! Our policy is to read, read, and read! We encourage our readers to read a book a week. We recommend five books a week, but if none of the books there encourage you, we have a daily recommendation so everyone can find something they like. We want everyone to find the perfect book so we are constantly updating our website because there is always a book to be read and loved! Follow us on social media and give us your recommendations!
+ 		</p>
+ 		<p>
+ 			Lire Le Livre was founded in 2018 by Carolyn McCawley. She was inspired to create the website after reading Robinson Crusoe. She had never hated a book more and she wanted the world to have easy access to find a book they can enjoy. She searches through bookstores and the internet for her recommendations so you don’t have to. She knows that everyone has busy and hectic lives and finding a book should be easy rather than a chore. Keep on reading!
+ 		</p>
+ 	</div>
+ </div>
+</div>
+
+	<div class="footer">
+		<span>
+		<a href="#">Contact Us</a>
+		<a href="#">Facebook</a>
+		<a href="#">Twitter</a>
+		<a href="#">Instagram</a>
+	</span>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+
+	<script type="text/javascript">
+		function randomNumber(min, max){
+            return Math.floor(Math.random()*(max-min)+min);
+        }
+        // instantiate a new timeline object
+        tl = new TimelineMax({
+            delay: 0.5,
+            repeat: 0 //repeats infinitely 
+        });
+
+        //add an explode label 10 seconds into the timeline, after the reset animation is done
+        //tl.add('explode', "+=10");
+
+        //IMG timeline
+        $('.img').each(function(index){
+            tl.from(this, 5, {
+                delay: 0.2,
+                scale: -1,
+                x:randomNumber(-500,2500),
+                y:randomNumber(-500,1000),
+                z: -1,
+                opacity: 0,
+                rotation: randomNumber(-180,180)
+            }, Math.random() * 1.5);
+        });
+
+            //animate the out after waiting 10 seconds using our explode label
+            
+        
+	</script>
+
+
+	
+</body>
+</html>

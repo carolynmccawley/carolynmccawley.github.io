@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="css/dailybook.css">
+
+	
+	<title>Book of the Day</title>
+
+</head>
+<body onload="addTitle(), addSummary(), addAuthor(), addReview()">
+	
+	<nav class="navbar navbar-transparet navbar-expand-lg">
+    <div class="container">
+    <!-- brand logo or name always get the brand class -->
+    <a class="navbar-brand" href="home.html">Livre Le Lit</a>
+    <!-- hidden button for the hamburger on mobile devices -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#myMenu"
+      aria-controls="navBarNavDropdown"
+      aria-expanded="false"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- flexbox content justify end -->
+    <div class="collapse navbar-collapse justify-content-end" id="myMenu">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="book.html" class="nav-link">Book of the Day</a>
+        </li>
+        <li class="nav-item">
+          <a href="explore.html" class="nav-link">Explore</a>
+        </li>
+		<li class="nav-item">
+          <a href="setting.html" class="nav-link">Setting</a>
+        </li>
+        <li class="nav-item">
+        	<a href="quiz.html" class="nav-link">Quiz</a>
+        </li>
+        <li class="nav-item">
+        	<a href="about.html" class="nav-link">About</a>
+        </li>
+        
+      </ul>
+    </div>
+    </div>
+  </nav>
+
+
+	<div class="pagetitle">
+		<h2>Book of the Day</h2>
+	</div>
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6">
+				<div id="photo"></div>
+			</div>
+			<div class="col-lg-6">
+				<div id="main"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-6">
+				<p id="author"></p>
+			</div>
+			<div class="col-lg-6">
+				<div id="review"></div>
+			</div>
+		</div>
+	</div>
+
+	<div class="footer">
+		<span>
+		<a href="#">Contact Us</a>
+		<a href="#">Facebook</a>
+		<a href="#">Twitter</a>
+		<a href="#">Instagram</a>
+	</span>
+	</div>
+
+
+
+
+	 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<script type="text/javascript">
+		function randomNumber(min, max){
+            return Math.floor(Math.random()*(max-min)+min);
+        }
+        var bookNum = randomNumber(0,3);
+
+		var books = [
+			//Book Images 
+			['photo/hawking.png','photo/monumentsm.png','photo/fox.png', 'photo/givingTree.png'],
+			//Book Titles
+			['A Brief History of Time <br> by Stephen Hawking', 'The Monuments Men: Allied Heroes, Nazi Thieves, and the Greatest Treasure Hunt in History <br> by Robert M. Edsel and Bret Witter', 'Fantastic Mr. Fox <br> by Roald Dahl', 'The Giving Tree <br> by Shel Silverstein'],
+			//Book Summaries 
+			['In honor of his recent passing, we recommend readers to read the famous scientist’s world renown book. <br> <br> A landmark volume in science writing by one of the great minds of our time, Stephen Hawking’s book explores such profound questions as: How did the universe begin—and what made its start possible? Does time always flow forward? Is the universe unending—or are there boundaries? Are there other dimensions in space? What will happen when it all ends? <br> <br> Told in language we all can understand, A Brief History of Time plunges into the exotic realms of black holes and quarks, of antimatter and “arrows of time,” of the big bang and a bigger God—where the possibilities are wondrous and unexpected. With exciting images and profound imagination, Stephen Hawking brings us closer to the ultimate secrets at the very heart of creation.', "At the same time Adolf Hitler was attempting to take over the western world, his armies were methodically seeking and hoarding the finest art treasures in Europe. The Fuehrer had begun cataloguing the art he planned to collect as well as the art he would destroy: 'degenerate' works he despised. <br> <br> In a race against time, behind enemy lines, often unarmed, a special force of American and British museum directors, curators, art historians, and others, called the Monuments Men, risked their lives scouring Europe to prevent the destruction of thousands of years of culture. <br> <br> Focusing on the eleven-month period between D-Day and V-E Day, this fascinating account follows six Monuments Men and their impossible mission to save the world's great art from the Nazis.", "Nobody outfoxes Fantastic Mr. Fox! <br> <br> Someone's been stealing from the three meanest farmers around, and they know the identity of the thief—it's Fantastic Mr. Fox! Working alone they could never catch him; but now fat Boggis, squat Bunce, and skinny Bean have joined forces, and they have Mr. Fox and his family surrounded. What they don't know is that they're not dealing with just any fox—Mr. Fox would rather die than surrender. Only the most fantastic plan can save him now.", "The Giving Tree, a story of unforgettable perception, beautifully written and illustrated by the gifted and versatile Shel Silverstein, has been a classic favorite for generations. <br> <br> Since it was first published fifty years ago, Shel Silverstein's poignant picture book for readers of all ages has offered a touching interpretation of the gift of giving and a serene acceptance of another's capacity to love in return."],
+			//About the author
+			['Stephen King was an English theoretical physicist, cosmologist, author, and Director of Research at the Centre for Theoretical Cosmology within the University of Cambridge. He is famous for having the first theory of cosmology that is explained by a union of the general theory of relativity and quantum mechanics. Stephen King studied at University of Oxford and University of Cambridge where he received his master’s and PhD. Up until the day he died, Hawking was a fierce supporter of knowledge and learning; he was constantly building and improving his own theories and ideas during his years of research.', 'Robert Edsel began his career in the oil and gas exploration business. In 1996 he moved to Europe to pursue his interests in the arts. Settling in Florence seeing some of the great works, he wondered how all of the monuments and art treasures survived the devastation of World War II. During the ensuing years, he devoted himself to finding the answer. In the process, he commissioned major research that has resulted in this book. Robert also coproduced the related documentary film, The Rape of Europa, and cowrote Rescuing Da Vinci, a photographic history of an art heist of epic proportions and the Allied rescue effort. The author lives in Dallas. <br> <br> Bret Witter cowrote the bestseller Dewey: The Small-Town Library Cat Who Touched the World (Grand Central, 2008). He lives in Louisville, KY.', 'Roald Dahl was a spy, ace fighter-pilot, chocolate historian and medical inventor. He was also the author of Charlie and the Chocolate Factory, Matilda, The BFG and many more brilliant stories. He remains the World’s No.1 storyteller. <br> <br> Roald Dahl died on 23 November 1990, aged 74. He was buried in the parish church of St Peter and St Paul in Great Missenden - the Buckinghamshire village where today The Roald Dahl Museum and Story Centre continues his extraordinary mission to amaze, thrill and inspire generations of children and their parents.', "Sheldon Allan 'Shel' Silverstein was an American writer known for his cartoons, songs, and children's books. He styled himself as Uncle Shelby in some works. Translated into more than 30 languages, his books have sold over 20 million copies. <br> <br> Shel Silverstein's incomparable career as a bestselling children's book author and illustrator began with Lafcadio, the Lion Who Shot Back. He is also the creator of picture books including A Giraffe and a Half, Who Wants a Cheap Rhinoceros?, The Missing Piece, The Missing Piece Meets the Big O, and the perennial favorite The Giving Tree, and of classic poetry collections such as Where the Sidewalk Ends, A Light in the Attic, Falling Up, Every Thing On It, Don't Bump the Glump!, and Runny Babbit."], 
+			//book reviews 
+			["Absolutely blew my mind! <br> Frankly I'm unqualified to rate this. Thus, it gets a 5 star to avoid doing it a disservice. While considering myself fairly intelligent, it's evident I'm not in this league. Having read and understood all of the words in this book, I just do not have a firm grasp on much of what Mr. Hawking presents. The concepts, proofs and theories are beyond my ability to comprehend. He makes a great attempt to reach the non-scientist reader. A really good job; a terrific effort. But this reader wasn't up to the task. <br> This book should be required reading for any person who plans to study physics. It is equally enlightening as it is at times humorous. Within the first two chapters of reading, I had a better understanding of the Theory of Relativity than I had gathered up to that point in my life. I will admit that his dissertations on Quantum Mechanics left me a little dizzy at times, but all in all, this is one of the most enlightening books i have ever read. It reads very quickly, and surprisingly, with considerable humor. I recommend it to all who have any desire to understand the formation of the universe and it's probable course.", "The book pretty much ensures that a reader will both understand the logistical difficulties (no actual unit, no access to transportation, constantly having to ask other military personnel for help), the danger (booby-trapped caches of loot, dank salt mines filled with art and explosives, German soldier ambush), and the heroic nature of the Monument Men's job (especially those who worked in Germany and had to reconcile risk to life and limb to save cultural heritage sites like Aachen Cathedral after touring devastating places like Dachau). <br> What an incredible job they did. What incredible people who believed so passionately in art that they would endure war conditions to attempt to save what the Nazis looted or destroyed. <br> One of the most enjoyable aspects to the study of history is always finding new stories. Even when you think you know a lot about a field you find something new and enjoyable. That one of the many reasons that I enjoyed Monuments Men so much. Robert Edsel has provided us with a look at an area of World War II studies that has gone virtually unnoticed for nearly 70 years. The men and women of the MFAA (Monuments, Fine Arts, and Archives) Division served an almost unknown, but incredibly valuable part in the war against the destructive evil of Nazism.", "What I liked most about Fantastic Mr Fox is not just that it’s a good story, but it’s a good story that’s meant to be read aloud. Every word is in the story is needed, you can’t just skim read the sentences and get the same effect. And every word read aloud “feels” good in the mouth! <br> Roald Dahl was a creative and brilliant writer and given he wrote many of his works for children, perhaps intended for them to be read aloud, by a parent or carer at bedtime, like I did for my son. We read several other of Dahl’s books, but none ever struck me as quite so poetically flowing and pleasing to the ear (and tongue) as Fantastic Mr Fox. <br> Roald Dahl remains one of my favorite children’s authors and Fantastic Mr. Fox is one of his best books. I just reread it after viewing Wes Anderson’s movie, Fantastic Mr. Fox. The book is a simpler version of the movie, but I think that the movie was very true to the feel and intent of the book. All of the characters in the movie seemed very true to the original characters in the book, as did the plot. I loved the simplicity and the humor when I originally read the book to my own children and with students in school many years ago. It was like revisiting an old friend as I reread it today. Definitely a great read! Highly recommended as a family read aloud for children 5 to 10 years old.", "What a meaningful and wonderful story. It is probably best to be read to kids in 4th grade and above based on my teaching experience, but it is also a book that could be read to kids at any age and then reread each year. They will get a different meaning from the same text as they grow older and mature. And they will be better for having heard the story many times. <br> 'The Giving Tree' is the timeless story of a story who watches a boy grow into a man, while giving everything she has, while asking for nothing (and expecting) nothing in return. It's a tale that tugs on my heart strings every time I read it; it's a staple in my life, inside and outside of my classroom."]
+
+		];
+		var img = new Image();
+		var div = document.getElementById('photo');
+		img.onload = function() {
+			div.innerHTML += '<img src="'+img.src+'"/>';
+		}
+		img.src=books[0][bookNum];
+
+		divTwo = document.getElementById('main')
+		function addTitle() {
+			divTwo.innerHTML += '<h3>' + books[1][bookNum] + '</h3>';
+		}
+
+		function addSummary() {
+			divTwo.innerHTML += '<p>' + books[2][bookNum] + '</p>'
+		}
+		divThree = document.getElementById('author');
+		function addAuthor() {
+			divThree.innerHTML += '<h3> About the Author </h3>'; 
+			divThree.innerHTML += '<p>'+ books[3][bookNum] + '</p>'
+		}
+		divFour = document.getElementById('review');
+		function addReview() {
+			divFour.innerHTML += '<h3> Reviews </h3>';
+			divFour.innerHTML+= '<p>' + books[4][bookNum] + '</p>'
+		}
+
+
+
+
+	</script>
+</body>
+</html>
