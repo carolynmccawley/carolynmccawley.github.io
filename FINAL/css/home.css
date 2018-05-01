@@ -6,6 +6,7 @@ body {
   background:linear-gradient(white,pink);
   font-family: 'Philosopher', sans-serif;
 }
+
 /*Changes the logo (Livre le Lit)*/
 .navbar-light .navbar-brand {
   color:#3498DB;
@@ -26,16 +27,14 @@ body {
   color:pink;
 }
 
+/*larger next and previous buttons*/
 .carousel-control-next-icon,
 .carousel-control-prev-icon {
         width:4rem;
         height: 4rem;
 }
-/*.navbar-inner {
-    background:none;
-    line-height: : 100px;
-}*/
 
+/*positioning welcome text*/
 .WelcomeText {
   margin-left: 5%;
   margin-right: 5%;
@@ -43,6 +42,7 @@ body {
 }
 
 
+/*positioning small dots*/
 .carousel-indicators {
   position: absolute;
   bottom: 10px;
@@ -54,6 +54,7 @@ body {
   text-align: center;
   list-style: none;
 }
+/*stylizing small dots so that they're pink*/
 .carousel-indicators li {
   display: inline-block;
   width: 10px;
@@ -66,6 +67,7 @@ body {
   border-radius: 10px;
 }
 
+/*footer is centered and turns black when hovered on*/
 .footer {
   text-align:center;
   margin-bottom:0%;
@@ -76,4 +78,5 @@ body {
 }
 .footer a:hover {
   color:black;
+  transition: 0.3s ease;
 }

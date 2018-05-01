@@ -8,30 +8,32 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+	<!-- Link of CSS to override bootstrap -->
     <link rel="stylesheet" type="text/css" href="css/dailybook.css">
 
 	
 	<title>Book of the Day</title>
 
 </head>
+<!-- When the page loads, it will randomly choose a book from the array -->
 <body onload="addTitle(), addSummary(), addAuthor(), addReview()">
-	
+	<!-- nav bar that has hamburger menu when screen is small -->
 	<nav class="navbar navbar-light navbar-expand-lg">
-    <div class="container">
-    <!-- brand logo or name always get the brand class -->
-    <a class="navbar-brand" href="home.html">Lire Le Livre</a>
-    <!-- hidden button for the hamburger on mobile devices -->
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-toggle="collapse"
-      data-target="#myMenu"
-      aria-controls="navBarNavDropdown"
-      aria-expanded="false"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <!-- flexbox content justify end -->
+    	<div class="container">
+   
+    	<a class="navbar-brand" href="home.html">Lire Le Livre</a>
+  
+    	<button
+      		class="navbar-toggler"
+      		type="button"
+      		data-toggle="collapse"
+      		data-target="#myMenu"
+      		aria-controls="navBarNavDropdown"
+      		aria-expanded="false"
+    	>
+      		<span class="navbar-toggler-icon"></span>
+    	</button>
+    <!-- Puts the links to other pages at the end -->
     <div class="collapse navbar-collapse justify-content-end" id="myMenu">
       <ul class="navbar-nav">
         <li class="nav-item">
@@ -55,10 +57,12 @@
     </div>
   </nav>
 
-
+	<!-- div for the page title -->
 	<div class="pagetitle">
 		<h2>Book of the Day</h2>
 	</div>
+
+	<!-- Container for the randomly generated book information -->
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-6 d-flex justify-content-center">
@@ -77,6 +81,7 @@
 
 	</div>
 
+	<!-- footer with social media links -->
 	<div class="footer">
 		<span>
 		<a href="#">Contact Us</a>
@@ -94,12 +99,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+	<!-- Javascript -->
 	<script type="text/javascript">
+		// function that generated random number between minimum and maximum
 		function randomNumber(min, max){
             return Math.floor(Math.random()*(max-min)+min);
         }
+        // number of books in the array
         var bookNum = randomNumber(0,3);
 
+        //array that contains the book images, the book titles, the book summaries and the reviews
+        //the array is aligned so that the first item in each array inside the array belong to the same book
 		var books = [
 			//Book Images 
 			['photo/hawking.png','photo/monumentsm.png','photo/fox.png', 'photo/givingTree.png'],
@@ -113,35 +123,38 @@
 			["Absolutely blew my mind! <br> Frankly I'm unqualified to rate this. Thus, it gets a 5 star to avoid doing it a disservice. While considering myself fairly intelligent, it's evident I'm not in this league. Having read and understood all of the words in this book, I just do not have a firm grasp on much of what Mr. Hawking presents. The concepts, proofs and theories are beyond my ability to comprehend. He makes a great attempt to reach the non-scientist reader. A really good job; a terrific effort. But this reader wasn't up to the task. <br> This book should be required reading for any person who plans to study physics. It is equally enlightening as it is at times humorous. Within the first two chapters of reading, I had a better understanding of the Theory of Relativity than I had gathered up to that point in my life. I will admit that his dissertations on Quantum Mechanics left me a little dizzy at times, but all in all, this is one of the most enlightening books i have ever read. It reads very quickly, and surprisingly, with considerable humor. I recommend it to all who have any desire to understand the formation of the universe and it's probable course.", "The book pretty much ensures that a reader will both understand the logistical difficulties (no actual unit, no access to transportation, constantly having to ask other military personnel for help), the danger (booby-trapped caches of loot, dank salt mines filled with art and explosives, German soldier ambush), and the heroic nature of the Monument Men's job (especially those who worked in Germany and had to reconcile risk to life and limb to save cultural heritage sites like Aachen Cathedral after touring devastating places like Dachau). <br> What an incredible job they did. What incredible people who believed so passionately in art that they would endure war conditions to attempt to save what the Nazis looted or destroyed. <br> One of the most enjoyable aspects to the study of history is always finding new stories. Even when you think you know a lot about a field you find something new and enjoyable. That one of the many reasons that I enjoyed Monuments Men so much. Robert Edsel has provided us with a look at an area of World War II studies that has gone virtually unnoticed for nearly 70 years. The men and women of the MFAA (Monuments, Fine Arts, and Archives) Division served an almost unknown, but incredibly valuable part in the war against the destructive evil of Nazism.", "What I liked most about Fantastic Mr Fox is not just that it’s a good story, but it’s a good story that’s meant to be read aloud. Every word is in the story is needed, you can’t just skim read the sentences and get the same effect. And every word read aloud “feels” good in the mouth! <br> Roald Dahl was a creative and brilliant writer and given he wrote many of his works for children, perhaps intended for them to be read aloud, by a parent or carer at bedtime, like I did for my son. We read several other of Dahl’s books, but none ever struck me as quite so poetically flowing and pleasing to the ear (and tongue) as Fantastic Mr Fox. <br> Roald Dahl remains one of my favorite children’s authors and Fantastic Mr. Fox is one of his best books. I just reread it after viewing Wes Anderson’s movie, Fantastic Mr. Fox. The book is a simpler version of the movie, but I think that the movie was very true to the feel and intent of the book. All of the characters in the movie seemed very true to the original characters in the book, as did the plot. I loved the simplicity and the humor when I originally read the book to my own children and with students in school many years ago. It was like revisiting an old friend as I reread it today. Definitely a great read! Highly recommended as a family read aloud for children 5 to 10 years old.", "What a meaningful and wonderful story. It is probably best to be read to kids in 4th grade and above based on my teaching experience, but it is also a book that could be read to kids at any age and then reread each year. They will get a different meaning from the same text as they grow older and mature. And they will be better for having heard the story many times. <br> 'The Giving Tree' is the timeless story of a story who watches a boy grow into a man, while giving everything she has, while asking for nothing (and expecting) nothing in return. It's a tale that tugs on my heart strings every time I read it; it's a staple in my life, inside and outside of my classroom."]
 
 		];
+		//adding the book to the page
 		var img = new Image();
 		var div = document.getElementById('photo');
+
+		//chooses a random book picture in the array
+		img.src=books[0][bookNum];
+		//function that adds image to page
 		img.onload = function() {
 			div.innerHTML += '<img src="'+img.src+'"/>';
 		}
-		img.src=books[0][bookNum];
 
-		divTwo = document.getElementById('main')
+		divTwo = document.getElementById('main');
+		//funciton that adds the book title
 		function addTitle() {
 			divTwo.innerHTML += '<h3>' + books[1][bookNum] + '</h3>';
 		}
-
+		//function that adds the book summary
 		function addSummary() {
 			divTwo.innerHTML += '<p>' + books[2][bookNum] + '</p>'
 		}
 		divThree = document.getElementById('author');
+		//function that add the information about the author
 		function addAuthor() {
 			divThree.innerHTML += '<h3> About the Author </h3>'; 
 			divThree.innerHTML += '<p>'+ books[3][bookNum] + '</p>'
 		}
 		divFour = document.getElementById('review');
+		//function that adds reviews of the books
 		function addReview() {
 			divFour.innerHTML += '<h3> Reviews </h3>';
 			divFour.innerHTML+= '<p>' + books[4][bookNum] + '</p>'
 		}
-
-
-
-
 	</script>
 </body>
 </html>

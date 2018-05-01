@@ -28,15 +28,12 @@ body {
 	color:pink;
 }
 
+/*Positioning the tree*/
 .booktree img {
 	margin-top: -20%;
 }
-/*
-.bookowl {
-	width:840px;
-	height: 400px;
-}*/
 
+/*Positioning the owl so that it lands on the tree*/
 .bookowl img {
 	margin-left: 17%;
 	margin-bottom: 2%;
@@ -49,10 +46,11 @@ p {
 	margin-bottom: 0;
 }
 
-
+/*Alight the footer text to the center and change to blue*/
+/*When user hovers over footer, text turns to black */
 .footer {
 	text-align:center;
-	margin-bottom:0;
+	margin-bottom:0%;
 }
 .footer a {
   text-decoration: none;
@@ -60,6 +58,7 @@ p {
 }
 .footer a:hover {
   color:black;
+  transition:0.3s ease;
 }
 
 

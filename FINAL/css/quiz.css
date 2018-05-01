@@ -27,13 +27,14 @@ body {
 	color:pink;
 }
 
+/*aligns title of page*/
 h2 {
 	text-align: center;
 }
-
+/*White button with blue text*/
 input[type='submit'] {
 	background: white;
-	color:pink;
+	color:#3498DB;
 }
 
 form {
@@ -47,6 +48,8 @@ form {
 	text-align: center;
 }
 
+
+/*aligns footer to center and changes color of text with hover*/
 .footer {
 	text-align:center;
 	margin-bottom:1%;

@@ -13,12 +13,13 @@
     <title>Setting Page</title>
   </head>
   <body>
-    <!-- Nav Bar -->
+    <!-- Nav Bar with hidden hamburger menu -->
+    <!-- hamburger menu appears when screen is small -->
     <nav class="navbar navbar-light navbar-expand-lg">
     <div class="container">
-    <!-- brand logo or name always get the brand class -->
+
     <a class="navbar-brand" href="home.html">Lire Le Livre</a>
-    <!-- hidden button for the hamburger on mobile devices -->
+
     <button
       class="navbar-toggler"
       type="button"
@@ -29,7 +30,7 @@
     >
       <span class="navbar-toggler-icon"></span>
     </button>
-    <!-- flexbox content justify end -->
+
     <div class="collapse navbar-collapse justify-content-end" id="myMenu">
       <ul class="navbar-nav">
         <li class="nav-item">
@@ -38,7 +39,7 @@
         <li class="nav-item">
           <a href="explore.html" class="nav-link">Explore</a>
         </li>
-    <li class="nav-item">
+        <li class="nav-item">
           <a href="setting.html" class="nav-link">Setting</a>
         </li>
         <li class="nav-item">
@@ -58,56 +59,55 @@
     <h2>Setting</h2>
   </div>
 
-  <!-- Photo Layout  -->
 
+  <!-- Photo Layout  -->
+  <!-- When page is large, 3 photos on a row-->
+  <!-- When page is medium, 2 photos on a row -->
+  <!-- When page is small, 1 photo on a row -->
+  <!-- d-flex justify content center is used to center photo -->
   <div class="container">
       <div class="row ">
-
-
+      
       <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center"> 
         <div class="blurtext">
-          <img src="photo/walkinwoods.png">
+          <img src="photo/walkinwoods.png" alt="Forest">
           <h3>A Walk in the Woods</h3>
         </div>
       </div>
 
       <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center"> 
         <div class="blurtext">
-          <img src="photo/greatgatsby.png">
+          <img src="photo/greatgatsby.png" alt="castle">
           <h3>The Great Gatsby</h3>
         </div>
       </div>
 
       <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center"> 
         <div class="blurtext">
-          <img class="d-block mx-auto" src="photo/tomsawyer.png">
+          <img src="photo/tomsawyer.png" alt="cave">
           <h3>The Adventures of Tom Sawyer</h3>
         </div>
-
       </div>
 
-      
-
-
-
+  
       <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center"> 
         <div class="blurtext">
-          <img src="photo/sevengables.png">
+          <img src="photo/sevengables.png" alt="village">
           <h3>The House of the Seven Gables</h3>
         </div>
       </div>
 
       <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
         <div class="blurtext">
-        <img src="photo/ulyssess.png">
+          <img src="photo/ulyssess.png" alt="village with flags">
          <h3>Ulysses</h3>
          </div>
       </div>
 
       <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
         <div class="blurtext">
-        <img src="photo/walden.png">
-        <h3>Walden</h3>
+          <img src="photo/walden.png" alt="pond with woods">
+          <h3>Walden</h3>
         </div>
       </div>
 
@@ -115,49 +115,50 @@
 
       <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
         <div class="blurtext">
-        <img src="photo/sleepyhollow.png">
-        <h3>The Legend of Sleepy Hollow</h3>
+          <img src="photo/sleepyhollow.png" alt="bridge in the woods">
+          <h3>The Legend of Sleepy Hollow</h3>
         </div>
       </div>
 
       <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
         <div class="blurtext">
-        <img src="photo/treasureisland.png">
-        <h3>Treasure Island</h3>
+          <img src="photo/treasureisland.png" alt="island">
+          <h3>Treasure Island</h3>
         </div>
       </div>
 
       <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
         <div class="blurtext">
-        <img src="photo/bigsur.png">
-        <h3>Big Sur</h3>
+          <img src="photo/bigsur.png" alt="landscape of coast">
+          <h3>Big Sur</h3>
         </div>
       </div>
 
       <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
         <div class="blurtext">
-        <img src="photo/brooklyn.png">
-        <h3>A Tree Grows in Brooklyn</h3>
+          <img src="photo/brooklyn.png" alt="brooklyn bridge">
+          <h3>A Tree Grows in Brooklyn</h3>
         </div>
       </div>
 
       <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
         <div class="blurtext">
-        <img src="photo/dickens.png">
-        <h3>Oliver Twist</h3>
+          <img src="photo/dickens.png" alt="london">
+          <h3>Oliver Twist</h3>
         </div>
       </div>
 
       <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center">
         <div class="blurtext">
-        <img src="photo/hobbit.png">
-        <h3>The Hobbit</h3>
+          <img src="photo/hobbit.png" alt="the hobbit house">
+          <h3>The Hobbit</h3>
         </div>
       </div>
 
 </div>
   </div>
-
+  
+  <!-- Footer with social media links -->
   <div class="footer">
     <span>
     <a href="#">Contact Us</a>
@@ -166,13 +167,5 @@
     <a href="#">Instagram</a>
   </span>
   </div>
-
-
-
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
   </body>
 </html>

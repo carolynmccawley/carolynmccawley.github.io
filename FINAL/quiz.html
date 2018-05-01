@@ -15,11 +15,13 @@
 
 </head>
 <body>
+	<!-- navbar with hamburger menu when page gets small enought -->
+	<!-- Logo on the left and links to other pages on the right -->
 	<nav class="navbar navbar-light navbar-expand-lg">
     <div class="container">
-    <!-- brand logo or name always get the brand class -->
+
     <a class="navbar-brand" href="home.html">Lire Le Livre</a>
-    <!-- hidden button for the hamburger on mobile devices -->
+
     <button
       class="navbar-toggler"
       type="button"
@@ -30,7 +32,7 @@
     >
       <span class="navbar-toggler-icon"></span>
     </button>
-    <!-- flexbox content justify end -->
+    <!-- Navbar links to other page -->
     <div class="collapse navbar-collapse justify-content-end" id="myMenu">
       <ul class="navbar-nav">
         <li class="nav-item">
@@ -57,103 +59,88 @@
 
 	<div class="container">
 		<div class="row">
+			<!-- Title of page -->
 			<div class="col-lg-12">
 				<h2>What Book Should You Read Next?</h2>
 			</div>
 		</div>
 
-	<!-- where the quiz will be -->
-		<div class="row">
-			<div class="col-lg-12">
-				<div id="quiz">
-					<form name="quizForm" onsubmit="return submitAnswers()">
-						<!-- Question 1 -->
-						<h3>1. What is your favorite genre?</h3>
-						<div class="questions">
+		<div class="col-lg-12">
+			<div id="quiz">
+				<!-- when user submits the quiz, the sumbitAnswers function will be called -->
+				<form name="quizForm" onsubmit="return submitAnswers()">
+					<!-- Question 1 -->
+					<h3>1. What is your favorite genre?</h3>
+					<div class="questions">
 						<input type="radio" name="q1" value="a" id="q1a"> Horror <br>
 						<input type="radio" name="q1" value="b" id="q1b">Adventure <br>
 						<input type="radio" name="q1" value="c" id="q1c"> Classics <br>
-						<input type="radio" name="q1" value="d" id="q1d"> Romance <br>
+						<input type="radio" name="q1" value="d" id="q1d"> Romance <br>						
 						<input type="radio" name="q1" value="e" id="q1e"> Science Fiction <br>
-						</div>
+					</div>
 
-						<br>
+					<br>
 
+					<!-- Question 2 -->
+					<h3>2. Which author do you identify with?</h3>
+					<div class="questions">
+						<input type="radio" name="q2" value="a" id="q2a"> Stephen King <br>
+						<input type="radio" name="q2" value="b" id="q2b"> J.R.R. Tolkein <br>
+						<input type="radio" name="q2" value="c" id="q2c"> Shakespeare <br>
+						<input type="radio" name="q2" value="d" id="q2d"> Nicholas Sparks <br>
+						<input type="radio" name="q2" value="e" id="q2e"> Madeleine L'Engle <br>
+					</div>
 
-						<!-- Question 2 -->
-						<h3>2. Which author do you identify with?</h3>
-						<div class="questions">
-							<input type="radio" name="q2" value="a" id="q2a"> Stephen King <br>
-							<input type="radio" name="q2" value="b" id="q2b"> J.R.R. Tolkein <br>
-							<input type="radio" name="q2" value="c" id="q2c"> Shakespeare <br>
-							<input type="radio" name="q2" value="d" id="q2d"> Nicholas Sparks <br>
-							<input type="radio" name="q2" value="e" id="q2e"> Madeleine L'Engle <br>
+					<br>
+					
+					<!-- Question 3 -->
+					<h3>3. The best part of a book is: </h3>
+					<div class="questions">
+						<input type="radio" name="q3" value="a" id="q3a"> Suspesne <br>
+						<input type="radio" name="q3" value="b" id="q3b"> The ending <br>
+						<input type="radio" name="q3" value="c" id="q3c"> Language <br>
+						<input type="radio" name="q3" value="d" id="q3d"> Characters <br>
+						<input type="radio" name="q3" value="e" id="q3e"> Disbelief <br>
+					</div>
 
-						</div>
+					<br>
 
-						<br>
+					<!--Question 4  -->
+					<h3>4. What is your favorite time period</h3>
+					<div class="questions">
+						<input type="radio" name="q4" value="a" id="q4a"> Present Day <br>
+						<input type="radio" name="q4" value="b" id="q4b"> 1940s <br>
+						<input type="radio" name="q4" value="c" id="q4c"> 1800s <br>
+						<input type="radio" name="q4" value="d" id="q4d"> 1980s <br>
+						<input type="radio" name="q4" value="e" id="q4e"> The Future <br>
+					</div>
 
+					<br>
 
-						<!-- Question 3 -->
-						<h3>3. The best part of a book is: </h3>
-						<div class="questions">
-							<input type="radio" name="q3" value="a" id="q3a"> Suspesne <br>
-							<input type="radio" name="q3" value="b" id="q3b"> The ending <br>
-							<input type="radio" name="q3" value="c" id="q3c"> Language <br>
-							<input type="radio" name="q3" value="d" id="q3d"> Characters <br>
-							<input type="radio" name="q3" value="e" id="q3e"> Disbelief <br>
+					<!-- Question 5 -->
+					<h3>5. Where is your favorite place to read</h3>
+					<div class="questions">
+						<input type="radio" name="q5" value="a" id="q5a"> In my room <br>
+						<input type="radio" name="q5" value="b" id="q5b"> Outside/In nature <br>
+						<input type="radio" name="q5" value="c" id="q5c"> My living room <br>
+						<input type="radio" name="q5" value="d" id="q5d"> A coffee shop <br>
+						<input type="radio" name="q5" value="e" id="q5e"> Anywhere <br>
+					</div>
 
-						</div>
+					<br>
 
-						<br>
-
-						 <!--Question 4  -->
-						 <h3>4. What is your favorite time period</h3>
-						 <div class="questions">
-						 	<input type="radio" name="q4" value="a" id="q4a"> Present Day <br>
-						 	<input type="radio" name="q4" value="b" id="q4b"> 1940s <br>
-							 <input type="radio" name="q4" value="c" id="q4c"> 1800s <br>
-						 	<input type="radio" name="q4" value="d" id="q4d"> 1980s <br>
-							 <input type="radio" name="q4" value="e" id="q4e"> The Future <br>
-						</div>
-
-						 <br>
-
-
-						 <!-- Question 5 -->
-						 <h3>5. Where is your favorite place to read</h3>
-						 <div class="questions">
-							 <input type="radio" name="q5" value="a" id="q5a"> In my room <br>
-						 	<input type="radio" name="q5" value="b" id="q5b"> Outside/In nature <br>
-						 	<input type="radio" name="q5" value="c" id="q5c"> My living room <br>
-						 	<input type="radio" name="q5" value="d" id="q5d"> A coffee shop <br>
-						 	<input type="radio" name="q5" value="e" id="q5e"> Anywhere <br>
-						 </div>
-
-						<br>
-
-						<input type="submit" value="Submit">
-					</form>
-
-				</div>
+					<input type="submit" value="Submit">
+				</form>
 			</div>
 		</div>
-
-		<!-- Where the button will be  -->
-		<!-- <div class="row">
-			<div class="col-lg-12">
-				<button id="submit">Submit</button>
-			</div>
-		</div> -->
-
-		<!-- Where the results will show up -->
-		<div class="row">
-			<div class="col-lg-12">
-				<div class= "displayResults" id="results"></div>
-			</div>
+		<!-- Where the results of the quiz will be displayed -->
+		<div class="col-lg-12">
+			<div class= "displayResults" id="results"></div>
 		</div>
 	</div>
+</div>
 
+	<!-- Footer with social media links -->
 	<div class="footer">
 		<span>
 		<a href="#">Contact Us</a>
@@ -163,16 +150,9 @@
 	</span>
 	</div>
 
-
-	 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
-    <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
-
+	<!-- Javascript functions -->
 	<script type="text/javascript">
+		//function that will calculate what the user should read
 		function submitAnswers() {
 			var score =0;
 
@@ -183,7 +163,6 @@
 			var q4 = document.forms["quizForm"]["q4"].value;
 			var q5 = document.forms["quizForm"]["q5"].value;
 
-			//alert('in quiz');
 			//make sure quiz is complete 
 			for (i = 1; i <= 5; i++) {
 				if (eval('q'+i) == null || eval('q'+i) == '') {
@@ -192,9 +171,11 @@
 				}
 			}
 
-			//results
+			//results array
 			var results = ['It by Stephen King', '20,000 Leagues Under the Sea by Jules Verne', 'Odyssey by Homer', 'The Notebook by Nicholas Sparks', "A Wrinkle in Time by Madeleine L'Engle"];
+
 			var bookRec;
+			//calculating score based on the answers the user selected
 			var questionA = [q1,q2,q3,q4,q5];
 			for (i = 0; i < questionA.length; i++) {
 				if (questionA[i]== 'a') {
@@ -210,7 +191,7 @@
 				}
 			}
 			
-			console.log('your score is: '+ score);
+			//based on score, chooses a book in the results array
 			if (score <= 8) {
 				bookRec = results[0];
 			} else if (score >= 9 && score <= 12) {
@@ -223,9 +204,9 @@
 				bookRec = results[4];
 			}
 
+			//puts the recomendation onto the page
 			var display = document.getElementById('results');
 			display.innerHTML = '<h2> You should read: ' + bookRec + '<h2>';
-
 			return false;
 		}
 

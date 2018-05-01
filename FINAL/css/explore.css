@@ -29,14 +29,18 @@ body {
 .row {
 	margin-bottom: 2%;
 }
+/*margin to separate books*/
+.col-lg-4 {
+	margin-bottom:3%;
+}
 
-
+/*puts space in */
 .row p, 
 .row h3 {
 	margin-left: 3%;
 	margin-right: 3%;
 }
-
+/*space between title of book and the summary*/
 .row p {
 	margin-top: 5%;
 }
@@ -46,10 +50,13 @@ body {
 	margin-bottom: 2%;
 }
 
+/*center title of page and the book titles*/
 h2,
 h3 {
 	text-align: center;
 }
+
+/*footer is aligned center and changes color when hovered on*/
 
 .footer {
 	text-align:center;
@@ -61,4 +68,5 @@ h3 {
 }
 .footer a:hover {
   color:black;
+  transition: 0.3s ease;
 }
