@@ -3,19 +3,27 @@
 html,
 body {
   margin: 0;
-  background-color:pink;
+  background:linear-gradient(white,pink);
   font-family: 'Philosopher', sans-serif;
 }
-
-.navbar a {
+/*Changes the logo (Livre le Lit)*/
+.navbar-light .navbar-brand {
 	color:#3498DB;
+	font-size: 40px;
 }
-a.navbar-brand {
-	font-size:40px;
+.navbar-light .navbar-brand:hover {
+	transition: 0.5s ease;
+	color:pink;
+}
+/*Changes the nav bar links*/
+.navbar-light .navbar-nav .nav-link {
+	color: #3498DB;
+	font-size:20px;
 }
 
-a.nav-link {
-	font-size: 20px;
+.navbar-light .navbar-nav .nav-link:hover {
+	transition: 0.5s ease;
+	color:pink;
 }
 
 .row {
