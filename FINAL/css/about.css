@@ -50,7 +50,7 @@ p {
 /*When user hovers over footer, text turns to black */
 .footer {
 	text-align:center;
-	margin-bottom:0%;
+	margin-bottom:0;
 }
 .footer a {
   text-decoration: none;
