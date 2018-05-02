@@ -6,6 +6,8 @@ body {
   background:linear-gradient(white,pink);
   font-family: 'Philosopher', sans-serif;
 }
+
+
 /*Changes the logo (Livre le Lit)*/
 .navbar-light .navbar-brand {
 	color:#3498DB;
@@ -25,6 +27,7 @@ body {
 	transition: 0.5s ease;
 	color:pink;
 }
+
 
 .row {
 	margin-bottom: 2%;

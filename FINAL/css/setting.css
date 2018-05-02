@@ -46,12 +46,13 @@ h2{
 	width:100%;
 	height:100%;
 	border-radius: 2%;
-	transition:1s ease;
+	transition: .5s;
 }
 
-/*Will blur and becomes less bright*/
+/*Will blur and becomes less bright in one second when hovering*/
 .blurtext:hover img {
-	filter:blur(2px) brightness(60%);
+	/*transition:1s ease;*/
+	filter:blur(2px) brightness(70%);
 }
 /*Text on the image won't appear with opacity set to 0*/
 .blurtext :not(img) {
@@ -62,7 +63,7 @@ h2{
 	text-align: center;
 	width:100%;
 	opacity:0;
-	transition: 1s;
+	transition: .5s;
 }
 /*Text will be on center of image*/
 .blurtext  h3{
