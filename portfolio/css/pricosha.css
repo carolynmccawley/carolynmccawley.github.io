@@ -1,0 +1,26 @@
+
+html,
+body {
+  margin: 0;
+}
+
+h1{
+  text-align: center;
+}
+
+div#navbarID {
+ /* position: relative;
+  left:40%;*/
+  float: none;
+  position: absolute;
+  margin-top:2%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container{
+    margin-top:5%;
+}
+
+h2, h5 {
+    text-align: center;
+}
