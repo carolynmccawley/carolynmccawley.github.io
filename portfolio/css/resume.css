@@ -47,3 +47,23 @@ div#rightContent {
 div.container {
 	position:relative;
 }
+
+div#Skills {
+    display: :inline-block;
+}
+div#subProject {
+    padding-bottom:2%;
+}
+div#rightContent ul {
+    margin-bottom:0%;
+    font-size: 14px;
+    font-style: italic;
+}
+button#resumeButton {
+    display:inline;
+    float:right;
+    margin-right:0%;
+    margin-top:-2%;
+    background-color: transparent;
+    border:none;
+}
