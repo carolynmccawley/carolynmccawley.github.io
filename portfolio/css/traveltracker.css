@@ -20,39 +20,11 @@ div#navbarID {
 .container{
     margin-top:5%;
 }
-
-h2, h5 {
+.row{
+    margin-top:3%;
+}
+h2,h5 {
     text-align: center;
-}
-
-div.row {
-    margin-top:2%;
-}
-
-button#pricoshaLink{
-    margin-top: 2%;
-    margin-bottom: 2%;
-    display: inline-block;
-    margin-left:50%;
-    transform: translateX(-50%);
-    background-color: black;
-    color:white;
-    border:none;
-    padding: 1%;
-    border-radius:5px;
-/*    display: flex;*/
-/*    align-self: center;*/
-/*    text-align: center;*/
-}
-
-button#pricoshaLink:hover {
-    transition-duration: 0.4s;
-    background-color: white;
-    color:black;
-}
-
-p#appDesc {
-    margin-top:5%;
 }
 
 footer{

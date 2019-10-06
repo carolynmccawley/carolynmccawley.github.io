@@ -63,3 +63,23 @@ div#navbarID {
 .blurtext:hover :not(img){
 	opacity:1;
 }
+
+
+footer{
+    position: relative;
+/*    justify-content: center;*/
+    bottom: 0;
+    margin-top:1%;
+    margin-bottom: 1%;
+    left:45%;
+    
+/*    text-align: center;*/
+}
+img#facebookIcon, img#linkedinIcon, img#githubIcon {
+    margin-right:2%;
+}
+img#linkedinIcon:hover, img#facebookIcon:hover, img#githubIcon:hover {
+    transition:.7s;
+/*    transform: scale(1.2, 1.2);*/
+    opacity: 0.5;
+}
