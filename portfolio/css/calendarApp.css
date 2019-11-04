@@ -1,7 +1,10 @@
 
 html,
 body {
+/*
   margin: 0;
+  width: auto;
+*/
 }
 
 h1{
@@ -25,37 +28,18 @@ h2, h5 {
     text-align: center;
 }
 
-div.row {
-    margin-top:2%;
+img#phone, video {
+    position: absolute;
 }
-
-button#pricoshaLink{
-    margin-top: 2%;
-    margin-bottom: 2%;
-    display: inline-block;
-    margin-left:50%;
-    transform: translateX(-50%);
-    background-color: black;
-    color:white;
-    border:none;
-    padding: 1%;
-    border-radius:5px;
-
-}
-
-button#pricoshaLink:hover {
-    transition-duration: 0.4s;
-    background-color: white;
-    color:black;
-}
-
-p#appDesc {
-    margin-top:5%;
+video {
+    left:-94;
+    margin-top:12;
+/*    right:: -300*/
 }
 
 footer{
     position: absolute;
-/*    bottom: 0;*/
+    bottom: 0;
     width: 100%;
     left:45%;
     margin-bottom: 1%;

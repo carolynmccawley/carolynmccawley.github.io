@@ -1,10 +1,9 @@
-
 html,
 body {
   margin: 0;
 }
 
-h1{
+h1,h2, h5{
   text-align: center;
 }
 
@@ -20,16 +19,7 @@ div#navbarID {
 .container{
     margin-top:5%;
 }
-
-h2, h5 {
-    text-align: center;
-}
-
-div.row {
-    margin-top:2%;
-}
-
-button#pricoshaLink{
+button#processingLink{
     margin-top: 2%;
     margin-bottom: 2%;
     display: inline-block;
@@ -43,19 +33,19 @@ button#pricoshaLink{
 
 }
 
-button#pricoshaLink:hover {
+button#processingLink:hover {
     transition-duration: 0.4s;
     background-color: white;
+    border-radius:5px;
+    border: 2px solid black;
     color:black;
 }
 
-p#appDesc {
-    margin-top:5%;
-}
+
 
 footer{
     position: absolute;
-/*    bottom: 0;*/
+    bottom: 0;
     width: 100%;
     left:45%;
     margin-bottom: 1%;

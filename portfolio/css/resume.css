@@ -1,3 +1,10 @@
+html, body{
+    width: 100%;
+    margin: 0;
+/*    body{*/
+    overflow-x:hidden;
+}
+
 .dropdown {
   position: relative;
   display: inline-block;
@@ -69,17 +76,17 @@ button#resumeButton {
 }
 
 footer{
-    position: relative;
-/*    justify-content: center;*/
-    bottom: 0;
-    margin-top:1%;
-    margin-bottom: 1%;
+    position: absolute;
+/*    bottom: 0;*/
+    width: 100%;
     left:45%;
-    
-/*    text-align: center;*/
+    margin-bottom: 2%;
 }
+
+
 img#facebookIcon, img#linkedinIcon, img#githubIcon {
     margin-right:2%;
+/*    bottom:0;*/
 }
 img#linkedinIcon:hover, img#facebookIcon:hover, img#githubIcon:hover {
     transition:.7s;
