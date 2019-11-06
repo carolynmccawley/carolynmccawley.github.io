@@ -27,6 +27,9 @@ div#navbarID {
 h2, h5 {
     text-align: center;
 }
+h2 {
+    margin-bottom: 3%;
+}
 
 img#phone, video {
     position: absolute;
@@ -37,12 +40,21 @@ video {
 /*    right:: -300*/
 }
 
+a#appLink {
+    text-decoration: none;
+    color:red;
+}
+a#appLink:hover {
+    font-weight: bold;
+}
+
 footer{
     position: absolute;
     bottom: 0;
     width: 100%;
     left:45%;
     margin-bottom: 1%;
+    margin-top: 1%;
 }
 
 img#facebookIcon, img#linkedinIcon, img#githubIcon {
