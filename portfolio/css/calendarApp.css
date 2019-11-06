@@ -1,10 +1,10 @@
 
 html,
 body {
-/*
   margin: 0;
   width: auto;
-*/
+  overflow-x:hidden;
+
 }
 
 h1{
@@ -54,7 +54,11 @@ footer{
     width: 100%;
     left:45%;
     margin-bottom: 1%;
-    margin-top: 1%;
+    margin-top: 5%;
+}
+
+img#phone, video {
+    margin-left:20%
 }
 
 img#facebookIcon, img#linkedinIcon, img#githubIcon {
