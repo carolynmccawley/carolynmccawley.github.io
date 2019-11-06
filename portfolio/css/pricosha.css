@@ -46,8 +46,8 @@ button#pricoshaLink{
 
 button#pricoshaLink:hover {
     transition-duration: 0.4s;
-    background-color: white;
-    color:black;
+    background-color: darkgray;
+    color:white;
 }
 
 p#appDesc {
