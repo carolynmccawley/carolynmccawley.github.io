@@ -4,11 +4,13 @@ body {
   margin: 0;
   width: auto;
   overflow-x:hidden;
+  font-family: "Garamond"
 
 }
 
 h1{
   text-align: center;
+  font-weight: bold;
 }
 
 div#navbarID {
@@ -19,6 +21,7 @@ div#navbarID {
   margin-top:2%;
   left: 50%;
   transform: translate(-50%, -50%);
+  font-weight: bold;
 }
 .container{
     margin-top:5%;

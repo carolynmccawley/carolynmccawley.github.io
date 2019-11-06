@@ -3,6 +3,7 @@ html, body{
     margin: 0;
 /*    body{*/
     overflow-x:hidden;
+    font-family: "Garamond"
 }
 
 .dropdown {
@@ -26,6 +27,7 @@ html, body{
 
 h1{
   text-align: center;
+  font-weight: bold;
 }
 
 div#navbarID {
@@ -36,6 +38,7 @@ div#navbarID {
   margin-top:2%;
   left: 50%;
   transform: translate(-50%, -50%);
+    font-weight: bold
 }
 /*Resume page css*/
 div#contactInfo {
