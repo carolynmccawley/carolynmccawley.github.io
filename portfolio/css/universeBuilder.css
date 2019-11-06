@@ -1,6 +1,7 @@
 html,
 body {
   margin: 0;
+  overflow-x:hidden;
 }
 
 h1,h2, h5{
@@ -26,7 +27,7 @@ button#processingLink{
     margin-left:50%;
     transform: translateX(-50%);
     background-color: black;
-    color:white;
+/*    color:white;*/
     border:none;
     padding: 1%;
     border-radius:5px;
@@ -35,19 +36,29 @@ button#processingLink{
 
 button#processingLink:hover {
     transition-duration: 0.4s;
-    background-color: white;
+    background-color: darkgray;
     border-radius:5px;
-    border: 2px solid black;
-    color:black;
+/*    border: 0px solid black;*/
+/*    color:white;*/
+}
+
+a.playButton {
+    color:white;
+    text-decoration: none;
+}
+
+img#universePic {
+    align-content: center;
 }
 
 
 
 footer{
     position: absolute;
-    bottom: 0;
+/*    bottom: 0;*/
     width: 100%;
     left:45%;
+    margin-top: 1%;
     margin-bottom: 1%;
 }
 
