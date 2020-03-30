@@ -42,11 +42,35 @@
 
 
 	<div class="container">
+        <div class="content">
         <h2>PriCoSha</h2>
-        <h5>Web app using Flask and MySql for CS-3083 Intro to Databases at NYU Tandon.</h5>
+        <h5>Social Media Web app using Flask and MySql for CS-3083 Intro to Databases at NYU Tandon.</h5>
+        <div class="row">
+            <div class="col-6">
+                <p>Carolyn's Responsibilities</p>
+                <ul>
+                    <li>Creating a group and adding members to the group with their email</li>
+                    <li>Removing groups, removing a user from a group, and the ability to sever users. Severing a user removes them from all of your groups and removes you from all their groups</li>
+                    <li>The ability to filter posts by content type (images or text)</li>
+                </ul>
+            </div>
+            
+            <div class="col-6">
+                 <p>Additional Features:</p>
+                
+                <ul>
+                    <li>The ability to upload images in addition to text</li>
+                
+                    <li>The ability to rate posts. Users are able to change their ratings; the number corresponding with which rating given is displayed on the individual post</li>
+                
+                
+                    <li>Commenting: a user is able to click on a post and redirected to a new page where all the comments are dispalyed and they are able to add their own</li>
+                </ul>
+            </div>
+        </div>
         <div class="row">
             <!--           description of the app     -->
-            <div class="col-8">
+            <div class="col-12">
                 <Button class="d-flex justify-content-center" id="pricoshaLink" href="https://github.com/al4991/PriCoSha">Link to Github</Button>
                 <p id="appDesc">PriCoSha is a Flask app developed by Andrew Lucero , Carolyn Ann McCawley, and Cindy Lee.
                     Our project has a public home page that will show content to users who are not logged in yet,
@@ -67,20 +91,10 @@
             </div>
             
             <div class="col-4">
-                <p>Additional Features:</p>
-                
-                <ul><li>The ability to upload images in addition to text, and the ability to filter posts by content type (such as images or text)
-                </li></ul>
-                
-                <ul><li>The ability to rate posts. Users are able to change their ratings; the number corresponding with which rating given is displayed on the individual post</li></ul>
-                
-                <ul><li>Removing groups, removing a user from a group, and the ability to sever users. Severing a user removes them from all of your groups and removes you from all their groups</li></ul>
-                
-                <ul><li>Commenting: a user is able to click on a post and redirected to a new page where all the comments are dispalyed and they are able to add their own</li></ul>
             </div>
         </div>
+
     </div>
-    
     <footer>
             <a href="https://www.facebook.com/carolyn.mccawley" target="_blank">
                 <img id="facebookIcon" src="../photo/facebook_icon.png"/>
@@ -94,6 +108,6 @@
             </a>
     </footer>
 
-
+    </div>
 </body>
 </html>

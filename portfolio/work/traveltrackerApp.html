@@ -1,0 +1,91 @@
+<!DOCTYPE hmtl>
+<html>
+    <head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bookstrap -->
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+
+   <!-- bootstrap jQuery -->
+   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+      <!-- Overriding Boostrap -->
+    <link rel="stylesheet" type="text/css" href="../css/calendarApp.css">
+
+
+	<title>Carolyn McCawley</title>
+</head>
+<body>
+
+    <h1>Carolyn McCawley</h1>
+    <!-- NAVBAR -->
+	 <div id="navbarID">
+	 <nav class="navbar navbar-light navbar-expand-sm">
+	 	<ul class="navbar-nav">
+	 		<li class="nav-item">
+	 			<a href="../home.html" class="nav-link">WORK</a>
+	 		</li>
+	 		<li class="nav-item">
+	 			<a href="../resume.html" class="nav-link">RESUME</a>
+	 		</li>
+
+  			<li class="nav-item">
+  				<a href="https://github.com/carolynmccawley?tab=repositories" class="nav-link" target="_blank">GITHUB</a>
+  			</li>
+	 	</ul>
+	 </nav>
+	</div>
+	<!-- NAVBAR END -->
+    
+    
+    <div class="container">
+        <h2>Travel Tracker App</h2>
+        <div class="row">
+            <div class="col-4">
+                <video width="500" height="400" autoplay muted loop>
+                    <source src="../photo/TravelTrackerAppScreenRecording.MP4" type="video/mp4">
+                        Your browser does not support the video tag.
+                </video>
+                <img  id="phone" width="280" height="440" src="../photo/iphoneImage.png">
+            </div>
+        <div class="col-8">
+            <h6>Built with:</h6>
+            <ul>
+                <li>React Native (JS)</li>
+                <li>Firebase</li>
+                <li>Yelp Fusion API</li>
+                <li>Google Places API</li>
+            </ul>
+            <p>The Travel Tracker App is the mobile version of the Travel Tracker Web Application that Carolyn had previously built. The app stores the user's data, their saved restaurants, places, and notes, in a Firebase Database that can be accessed with their email and password. The user can search and save restaurants and places in a desired location. The app also keeps track of their notes; a person can create a note that saves the location, date, and any information they'd like to keep track of about a given trip.</p>
+            
+            <p>While transitioning from web to mobile, Carolyn had to consider what changes needed to be implemented in lieu of the change in medium. Rather than having a navigation bar on top, she had the nav bar on the bottom of the screen. Additionally, she split the app up into multiple screens to adhere  to the smaller screen size.</p>
+            
+            <p>The app is published and can be viewed and used on expo at: <a id="appLink" href="https://expo.io/@cam1010/traveltrackerv2" target="_blank">this link</a></p>
+            
+<!--
+            <p>The documentation for the app can be viewed and downloaded at: 
+            <a id="appLink" href="https://github.com/carolynmccawley/calendarApp_Mobile"
+            target="_blank">this github repository</a>
+            </p>
+-->
+        </div>
+        </div>
+    </div>
+   <footer>
+            <a href="https://www.facebook.com/carolyn.mccawley" target="_blank">
+                <img id="facebookIcon" src="../photo/facebook_icon.png"/>
+            </a>
+            <a href="https://linkedin.com/in/carolyn-mccawley" target="_blank">
+                <img id="linkedinIcon" src="../photo/linkedin_icon.png"/>
+            </a>
+            
+            <a href="https://github.com/carolynmccawley?tab=repositories" target="_blank">
+                <img id="githubIcon" src="../photo/github_icon.png"/>
+            </a>
+    </footer>
+
+</body>
+</html>

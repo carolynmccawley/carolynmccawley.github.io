@@ -4,7 +4,8 @@ body {
   margin: 0;
   width: auto;
   overflow-x:hidden;
-  font-family: "Garamond"
+  font-family: "Garamond";
+  overflow-y: hidden;
 
 }
 
@@ -51,13 +52,14 @@ a#appLink:hover {
     font-weight: bold;
 }
 
+
 footer{
+/*       height:1.5rem;*/
     position: absolute;
-    bottom: 0;
+/*    bottom: 0;*/
     width: 100%;
     left:45%;
     margin-bottom: 1%;
-    margin-top: 5%;
 }
 
 img#phone, video {

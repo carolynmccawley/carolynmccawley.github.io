@@ -1,0 +1,85 @@
+
+html,
+body {
+  margin: 0;
+  overflow-x:hidden;
+  font-family: "Garamond"
+}
+
+h1{
+  text-align: center;
+  font-weight: bold;
+}
+
+div#navbarID {
+ /* position: relative;
+  left:40%;*/
+  float: none;
+  position: absolute;
+  margin-top:2%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+}
+.container{
+    margin-top:5%;
+}
+
+h2, h5 {
+    text-align: center;
+}
+
+div.row {
+    margin-top:2%;
+    padding-bottom: 1.5rem;
+}
+
+button#pricoshaLink{
+    margin-top: 2%;
+    margin-bottom: 2%;
+    display: inline-block;
+    margin-left:50%;
+    transform: translateX(-50%);
+    background-color: black;
+    color:white;
+    border:none;
+    padding: 1%;
+    border-radius:5px;
+
+}
+
+button#pricoshaLink:hover {
+    transition-duration: 0.4s;
+    background-color: darkgray;
+    color:white;
+}
+
+p#appDesc {
+    margin-top:5%;
+}
+
+footer{
+    height:1.5rem;
+    position: absolute;
+/*    bottom: 0;*/
+    width: 100%;
+    left:45%;
+    margin-bottom: 1%;
+}
+
+img#facebookIcon, img#linkedinIcon, img#githubIcon {
+    margin-right:2%;
+}
+img#linkedinIcon:hover, img#facebookIcon:hover, img#githubIcon:hover {
+    transition:.7s;
+/*    transform: scale(1.2, 1.2);*/
+    opacity: 0.5;
+}
+a#noslink {
+    text-decoration: none;
+    color:black;
+}
+a#noslink:hover {
+    color:red;
+/*    transition-duration:0.2s;*/
+}
