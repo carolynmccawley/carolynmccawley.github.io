@@ -10,19 +10,27 @@ h1{
   text-align: center;
   font-weight: bold;
 }
-
-div#navbarID {
- /* position: relative;
-  left:40%;*/
-  float: none;
-  position: absolute;
-  margin-top:2%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-    font-weight: bold;
+div.navbar {
+    display: flex;
+    justify-content: center;
 }
+a#navLink {
+    margin-right: 5%;
+    margin-left: 5%;
+    text-decoration: none;
+    color:darkgray;
+}
+a#navLink:hover {
+    transition-duration: 0.3s;
+    color: gray;
+}
+  
 .container{
-    margin-top:5%;
+/*    margin-top:5%;*/
+/*    padding-bottom: 3%;*/
+    min-height: 100vh; /* will cover the 100% of viewport */
+    display: block;
+    position: relative;
 }
 .row{
     margin-top:3%;
@@ -31,20 +39,20 @@ h2,h5 {
     text-align: center;
 }
 
-footer{
+footer {
     position: absolute;
-/*    bottom: 0;*/
+    bottom: 2%;
     width: 100%;
-    left:45%;
-    margin-top: 1%;
-    margin-bottom: 1%;
+    display: flex;
+    justify-content: center
 }
 
-img#facebookIcon, img#linkedinIcon, img#githubIcon {
-    margin-right:2%;
-}
 img#linkedinIcon:hover, img#facebookIcon:hover, img#githubIcon:hover {
     transition:.7s;
 /*    transform: scale(1.2, 1.2);*/
     opacity: 0.5;
+}
+img#linkedinIcon, img#facebookIcon, img#githubIcon{
+    padding-left: 15px;
+    padding-right: 15px;
 }
