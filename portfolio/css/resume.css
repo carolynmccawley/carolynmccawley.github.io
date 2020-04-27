@@ -6,20 +6,6 @@ html, body{
     font-family: "Garamond"
 }
 
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  padding: 12px 16px;
-  z-index: 1;
-}
 
 .dropdown:hover .dropdown-content {
   display: block;
@@ -30,16 +16,7 @@ h1{
   font-weight: bold;
 }
 
-div#navbarID {
- /* position: relative;
-  left:40%;*/
-  float: none;
-  position: absolute;
-  margin-top:2%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-    font-weight: bold
-}
+
 /*Resume page css*/
 div#contactInfo {
 	text-align: center;
@@ -77,22 +54,34 @@ button#resumeButton {
     background-color: transparent;
     border:none;
 }
-
-footer{
+footer {
     position: absolute;
-/*    bottom: 0;*/
+    bottom: 2%;
     width: 100%;
-    left:45%;
-    margin-bottom: 2%;
+    display: flex;
+    justify-content: center
+}
+img#linkedinIcon, img#facebookIcon, img#githubIcon{
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
-
-img#facebookIcon, img#linkedinIcon, img#githubIcon {
-    margin-right:2%;
-/*    bottom:0;*/
-}
 img#linkedinIcon:hover, img#facebookIcon:hover, img#githubIcon:hover {
     transition:.7s;
 /*    transform: scale(1.2, 1.2);*/
     opacity: 0.5;
+}
+div.navbar {
+    display: flex;
+    justify-content: center;
+}
+a#navLink {
+    margin-right: 5%;
+    margin-left: 5%;
+    text-decoration: none;
+    color:darkgray;
+}
+a#navLink:hover {
+    transition-duration: 0.3s;
+    color: gray;
 }
