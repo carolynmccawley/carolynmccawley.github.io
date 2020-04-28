@@ -85,3 +85,12 @@ a#navLink:hover {
     transition-duration: 0.3s;
     color: gray;
 }
+
+img#download {
+    opacity:0.5
+}
+
+img#download:hover {
+    transition-duration: 0.2s;
+    opacity:1
+}
